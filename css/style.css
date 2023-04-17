@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+:root{
+    --tipografia: 'Hanken Grotesk', sans-serif;
+    /*Colores primarios*/
+    --lightRed: hsl(6, 100%, 98%);
+    --lightRed2: hsl(6, 100%, 67%);
+    --orangeyYellow: hsl(39, 100%, 56%);
+    --greenTeal: hsl(166, 100%, 37%);
+    --cobaltBlue: hsl(234, 85%, 45%);
+    /*Gradients*/
+    --lightSlateBlue: hsl(252, 100%, 67%);
+    --lightRoyalBlue: hsl(241, 81%, 54%);
+    --violetBlue: hsla(256, 72%, 46%, 1);
+    --persianBlue: hsla(241, 72%, 46%, 0);
+    /*Neutral*/
+    --white: hsl(0, 0%, 100%);
+    --paleBlue: hsl(221, 100%, 96%);
+    --lightLavender: hsl(241, 100%, 89%);
+    --darkGrayBlue: hsl(224, 30%, 27%);
+}
+html {
+    /* Reset para rems 62.5% = 10px */
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+}
+/*Globales*/
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c-white{
+    color: var(--white);
+}
+.c-paleBlue{
+    color: var(--paleBlue);
+}
+.c-ligthRed2{
+    color: var(--lightRed2);
+}
+.text-align-center{
+    text-align: center;
+}
+.text-align-justify{
+    text-align: justify;
+}
+.border{
+    border: 1px solid black;
+}
+body{
+    font-family: var(--tipografia);
+    font-size: 1.5rem;
+    line-height: 2;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.container{
+    box-shadow: var(--lightLavender) 0px 7px 29px 0px;
+}
+.container-result{
+    border-radius: 2rem;
+    padding: 2rem;
+    background: linear-gradient( var(--lightSlateBlue), var(--lightRoyalBlue));
+    width: 40rem;
+}
+.number-result{
+    color: var(--white);
+    text-align: center;
+    border-radius: 100%;
+    background: linear-gradient (var(--violetBlue), var(--persianBlue));
+    flex-direction: column;   
+    width: 20rem;
+    height: 20rem;
+    margin: 2rem auto;
+}
+.description-result{
+    width: 20rem;
+}
+.summary{
+    background-color: var(--white);
+    width: 40rem;
+    padding: 2rem;
+}
+.reaction{
+    background-color: var(--lightRed);
+    justify-content: space-between;
+    border-radius: 1.5rem;
+    vertical-align: middle;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.reaction img{
+    display: inline;
+    vertical-align: middle;
+}
