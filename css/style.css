@@ -5,8 +5,11 @@
     --lightRed: hsl(6, 100%, 98%);
     --lightRed2: hsl(6, 100%, 67%);
     --orangeyYellow: hsl(39, 100%, 56%);
+    --orangeYellow2: hsl(41, 92%, 95%);
     --greenTeal: hsl(166, 100%, 37%);
+    --greenTeal2: hsl(164, 58%, 94%);
     --cobaltBlue: hsl(234, 85%, 45%);
+    --cobalBlue2: hsl(234, 66%, 94%);
     /*Gradients*/
     --lightSlateBlue: hsl(252, 100%, 67%);
     --lightRoyalBlue: hsl(241, 81%, 54%);
@@ -42,6 +45,15 @@ html {
 }
 .c-ligthRed2{
     color: var(--lightRed2);
+}
+.c-orangeyYellow{
+    color: var(--orangeyYellow);
+}
+.c-greemTeal{
+    color: var(--greenTeal);
+}
+.c-cobalBlue{
+    color: var(--cobalBlue);
 }
 .text-align-center{
     text-align: center;
@@ -87,15 +99,27 @@ body{
     width: 40rem;
     padding: 2rem;
 }
-.reaction{
-    background-color: var(--lightRed);
+.summary img{
+    display: inline;
+    vertical-align: middle;
+}
+.summary > div{
     justify-content: space-between;
     border-radius: 1.5rem;
     vertical-align: middle;
     padding: 1rem;
     margin: 1rem 0;
 }
-.reaction img{
-    display: inline;
-    vertical-align: middle;
+.reaction{
+    background-color: var(--lightRed);
+}
+.memory{
+    background-color: var(--orangeYellow2);
+}
+.verbal{
+    background-color: var(--greenTeal2)
+}
+
+.visual{
+    background-color: var(--cobalBlue2);
 }
